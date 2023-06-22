@@ -5,11 +5,11 @@
 class Avxctl < Formula
   desc ""
   homepage "https://github.com/aajolly/avxctl"
-  version "0.2"
+  version "0.3"
 
   on_macos do
-    url "https://github.com/aajolly/avxctl/releases/download/v0.2/avxctl_0.2_darwin_all.tar.gz"
-    sha256 "561ad3dc5ea04945a4024d635df57d4654dcef33dcf9a42ee4017a5ea9008998"
+    url "https://github.com/aajolly/avxctl/releases/download/v0.3/avxctl_0.3_darwin_all.tar.gz"
+    sha256 "d5d620ce2752954e845f869c51755fbd9555feefde96dc40576718ec7f10f74e"
 
     def install
       bin.install "avxctl"
@@ -18,16 +18,16 @@ class Avxctl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aajolly/avxctl/releases/download/v0.2/avxctl_0.2_linux_amd64.tar.gz"
-      sha256 "db632c1520ec93a13c79dbcc1009d4a10ed8d75244227d208a800c1942572279"
+      url "https://github.com/aajolly/avxctl/releases/download/v0.3/avxctl_0.3_linux_amd64.tar.gz"
+      sha256 "b76e99b14da1fa3e7a571bc9bd0ee23784eec769a42fa4ffea821963fc6a2ce0"
 
       def install
         bin.install "avxctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aajolly/avxctl/releases/download/v0.2/avxctl_0.2_linux_arm64.tar.gz"
-      sha256 "8425c8e44585ef864152658ec4dd37813518310b23ad8aef9d5a4feea11c806b"
+      url "https://github.com/aajolly/avxctl/releases/download/v0.3/avxctl_0.3_linux_arm64.tar.gz"
+      sha256 "a24f97396d0a4015f50d6dc262829c547565930fd2733e9c35e7422a642e0ecb"
 
       def install
         bin.install "avxctl"
